@@ -9,7 +9,7 @@
     <h1>In this project I learned how to display images in different projections</h1>
     
     <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <p>I projected a vector shape file of the countries of the world. Then, while running the indicatrix mapper plugin, I searched for different projections by using the filter word "world". I tried a bunch of different ones because some of them didn't seem to work. I finally found the ESRI 54052 and the EPSG 4087 projections which worked well.</p>
     
     <h2>WGS84 Projection</h2>
     <h3>Some observations</h3>
@@ -20,6 +20,41 @@
     <h3>Some observations</h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESPG 3857 Projection</h2>
+    <h3>This projection displays the world to be flat. To accomodate this, the latitudes closer to the poles have larger areas.</h3>
+    <a href=".//maps/EPSG 3857.png">
+    <img src=".//maps/EPSG 3857.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESRI 53018 Projection</h2>
+    <h3>This projection tries to still maintain the spherical shape of earth. The relative shapes of the continents aren't changed much. The closer to the center of the map the circles are, the less distored they become.</h3>
+    <a href=".//maps/ESRI 53018.png">
+    <img src=".//maps/ESRI 53018.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESRI 54034 Projection</h2>
+    <h3>On this display, it is in equal area projection so there is distortion of the continents the farther from the center you go.</h3>
+    <a href=".//maps/ESRI 54034.png">
+    <img src=".//maps/ESRI 54034.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESRI 54027 Projection</h2>
+    <h3>This is a conic projection. You can see this in how the grid does not wrap all around as if a cone was unrolled. The closer to the north pole places are on the map, the less distorted they get.</h3>
+    <a href=".//maps/ESRI 54027.png">
+    <img src=".//maps/ESRI 54027.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESRI 102016 Projection</h2>
+    <h3>The azimuthal projection looks similar to the conic projection. However, the ends of the grid are closer together, and as a result the shapes of the continents are distorted to a higher degree than seen in the conic projection.</h3>
+    <a href=".//maps/ESRI 102016.png">
+    <img src=".//maps/ESRI 102016.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>EPSG 4087 Projection</h2>
+    <h3>This is very similar to the WGS 84 example at the top of the page. Perhaps the area is distributed slightly different between the two.</h3>
+    <a href=".//maps/EPSG 4087.png">
+    <img src=".//maps/EPSG 4087.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESRI 54052 Projection</h2>
+    <h3>The circles vary in how they are distorted. It is interesting that at latitudes near the poles we see the cirlces getting closer together.</h3>
+    <a href=".//maps/ESRI 54052.png">
+    <img src=".//maps/ESRI 54052.png" alt="Aitoff" width='500px'>
     </a>
     <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
     <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
